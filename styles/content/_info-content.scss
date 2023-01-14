@@ -1,0 +1,114 @@
+.info-content {
+  width: 100%;
+  max-width: 120rem;
+  margin: 0 auto;
+  margin-top: 5rem;
+  padding: 2rem;
+  .back {
+    width: 8rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 0.5rem;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 400;
+    background-color: $White;
+    cursor: pointer;
+    &:hover {
+      background-color: $Very-Light-Gray;
+    }
+  }
+  .country-info {
+    margin-top: 5rem;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    img {
+      width: 100%;
+      max-width: 60rem;
+      height: auto;
+    }
+    .infos {
+      width: 100%;
+      margin-left: 10rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      .main-info {
+        line-height: 2.5rem;
+        flex-basis: 50%;
+        flex: 1 1;
+
+        h1 {
+          font-size: 3rem;
+          margin-bottom: 3rem;
+        }
+        .ijoTKY {
+          list-style: none;
+          display: flex;
+          flex-wrap: wrap;
+          margin-bottom: 1rem;
+          .kvLlBY {
+            flex: 0 0 50%;
+            min-width: 200px;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+            .jkewLk {
+              font-weight: 700;
+              display: inline-block;
+              margin-bottom: 0.5rem;
+              margin-right: 0.5rem;
+            }
+            .gMSxFu {
+              display: inline-flex;
+              flex-wrap: wrap;
+            }
+          }
+        }
+        .gsAhcr {
+          list-style: none;
+          display: flex;
+          flex-wrap: wrap;
+          margin-bottom: 0px;
+          .jqHKpu {
+            flex: 0 0 100%;
+            min-width: 200px;
+            margin-bottom: 0px;
+            .jkewLk {
+              font-weight: 700;
+              display: inline-block;
+              margin-bottom: 0.5rem;
+              margin-right: 0.5rem;
+            }
+            .gMSxFu {
+              display: inline-flex;
+              flex-wrap: wrap;
+              font-size: 5rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .info-content {
+    //padding: 2rem;
+    .country-info {
+      flex-direction: column;
+      .main-info {
+        justify-content: center;
+        margin-top: 5rem;
+        .ijoTKY {
+          flex-basis: 100%;
+        }
+      }
+    }
+  }
+}

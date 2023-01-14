@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/css/main.css">
+    <script src="https://kit.fontawesome.com/adb29892fe.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+        <div class="content-wrapper">
+
+            <header class="header">
+                <nav>
+                    <ul>
+                        <li>Where in the world?</li>
+                        <li id="darkMode">
+                            <i class="fas fa-moon"></i>
+                            <span>Dark Mode</span>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+
+            <main class="main">
+                <section class="search-wrapper">
+                    <div class="search-input">
+                        <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                        <input type="text" placeholder="Search for a country..." id="searchInput" class="search-input">      
+                    </div>
+                    <div class="search-list">
+                        <select name="region" id="filter" class="select-list">
+                            <option value="All">All</option>
+                            <option value="Africa">Africa</option>
+                            <option value="Americas">America</option>
+                            <option value="Asia">Asia</option>
+                            <option value="Europe">Europe</option>
+                            <option value="Oceania">Oceania</option>
+                        </select>
+                    </div>
+                </section>
+
+                <section class="countries-wrapper" id="wrapper">
+                    <!-- <a class="list-item" href="#">
+                        <img src="https://flagcdn.com/ge.svg" alt="">
+                        <div class="info">
+                            <h2 class="country-name">
+                                Georgia
+                            </h2>
+                        <div>
+                            <h3>Population:</h3>
+                            <span id="population" class="population">3,714,000</span>
+                        </div>
+                        <div>
+                            <h3>Region:</h3>
+                            <span id="region" class="region">Asia</span>
+                        </div>
+                        <div>
+                            <h3>Capital:</h3>
+                            <span id="Capital" class="capital">Tbilisi</span>
+                        </div>
+                    </div>
+                    </a> -->
+                </section>
+
+            </main>
+
+            <div class="info-content hidden">
+                <div class="back-btn">
+                    <button class="back" id="backBtn">
+                        <span>
+                            <i class="fa-solid fa-arrow-left-long"></i>
+                        </span>
+                        <span>Back</span>
+                    </button>
+                </div>
+                <div class="country-info">
+                    <img src="https://flagcdn.com/gf.svg" alt="flag" />
+                    <div class="infos">
+                        <div class="main-info">
+                            <h1 class="country-name__info"></h1>
+                            <ul class="sc-iCfMLu ijoTKY">
+                                <li class="sc-furwcr kvLlBY">
+                                <span class="sc-pVTFL jkewLk">Native Name:</span>
+                                <span class="sc-jrQzAO gMSxFu native-name"></span></li>
+                                <li class="sc-furwcr kvLlBY"><span class="sc-pVTFL jkewLk">Top Level Domain:</span>
+                                    <span class="sc-jrQzAO gMSxFu domain">150</span></li>
+                                    <li class="sc-furwcr kvLlBY"><span class="sc-pVTFL jkewLk">Population:</span>
+                                        <span class="sc-jrQzAO gMSxFu population__info"></span></li>
+                                        <li class="sc-furwcr kvLlBY">
+                                            <span class="sc-pVTFL jkewLk">Currencies:</span>
+                                            <span class="sc-jrQzAO gMSxFu currencies"></span></li>
+                                        <li class="sc-furwcr kvLlBY"><span class="sc-pVTFL jkewLk">Region:</span>
+                                            <span class="sc-jrQzAO gMSxFu region__info"></span></li>
+                                            <li class="sc-furwcr kvLlBY"><span class="sc-pVTFL jkewLk">Languages:</span>
+                                                <span class="sc-jrQzAO gMSxFu languages__info"></span></li>
+                                                <li class="sc-furwcr kvLlBY"><span class="sc-pVTFL jkewLk">Sub Region:</span>
+                                                    <span class="sc-jrQzAO gMSxFu sub-region"></span></li>
+                                                    <li class="sc-furwcr kvLlBY"><span class="sc-pVTFL jkewLk">Capital:</span>
+                                                        <span class="sc-jrQzAO gMSxFu capital__info"></span>
+                                                    </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+    <script src="/app.js"></script>
+</body>
+</html>
